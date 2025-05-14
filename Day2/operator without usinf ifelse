@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int age1, age2;
+
+    printf("Enter age of person 1: ");
+    scanf("%d", &age1);
+
+    printf("Enter age of person 2: ");
+    scanf("%d", &age2);
+
+    // Ternary operator used for decision making
+    (age1 < age2) ? printf("Person 2 is older.\n") :
+    (age1 == age2) ? printf("Both are of the same age.\n") :
+    printf("Person 1 is older.\n");
+
+    return 0;
+}
